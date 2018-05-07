@@ -24,6 +24,7 @@ public class Main {
         // in io.weli package
         final ResourceConfig rc = new ResourceConfig().packages("io.weli");
 
+
         // create and start a new instance of grizzly http server
         // exposing the Jersey application at BASE_URI
         return GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
